@@ -122,3 +122,4 @@ Fancybox.bind("[data-fancybox]", {
         },
     },
 });
+

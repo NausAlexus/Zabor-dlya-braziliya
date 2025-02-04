@@ -15,6 +15,7 @@ html {
 
 body {
   background: #F7F7F7;
+  max-width: 1920px;
 }
 body.locked nav {
   backdrop-filter: none;
@@ -1061,7 +1062,7 @@ input[type=button]:focus {
 .container-privacy {
 	max-width: 800px;
 	margin: auto;
-	margin-top: 140px;
+	margin-top: 110px;
 	margin-bottom: 40px;
 	background: white;
 	padding: 20px;
