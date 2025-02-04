@@ -127,7 +127,7 @@ Fancybox.bind("[data-fancybox]", {
 
 
 //feedback
-const slides = document.querySelector('.slides');
+const slides = document.querySelector('.slides-review');
 const slide = document.querySelectorAll('.feedback__slide');
 const pagination = document.querySelector('.pagination');
 

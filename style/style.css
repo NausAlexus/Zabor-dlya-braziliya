@@ -1243,7 +1243,7 @@ input[type=button]:focus {
   max-width: 900px;
 }
 
-.slider {
+.slider-review {
   position: relative;
   width: 100%; 
   max-width: 750px; 
@@ -1251,7 +1251,7 @@ input[type=button]:focus {
   margin: 0 auto; 
 }
 
-.slides {
+.slides-review {
   display: flex;
   transition: transform 0.5s ease;
 }
