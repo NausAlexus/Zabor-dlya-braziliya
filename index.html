@@ -732,36 +732,22 @@
 <section class="form" id="form">
     <div class="container">
         <div class="form__wrapper">
-            <form class="contact-form" id="contact-form" method="post" action="/php/send.php"
-                onsubmit="return validate_form ( );">
-                <p class=" form__title">Заполните форму, и мы перезвоним!</p>
-                <input type="text" name="name" id="name" placeholder="Как к вам обращаться?" required>
-                <input type="text" name="phone" id="phone" placeholder="8 123 456 78 90" required>
-                <button type="submit" class="btn-cost">Рассчитать стоимость</button>
-                <div class="form__icons">
-                    <a class="form__icons-link" href="tel:+74952481853">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M10.9125 5.97454L11.275 9.14954C11.3625 9.91204 11.1 10.662 10.5625 11.1995L8.26248 13.4995C10.0625 17.037 12.95 19.937 16.5 21.737L18.8125 19.4245C19.0781 19.1586 19.4006 18.9563 19.7557 18.8329C20.1107 18.7095 20.4891 18.6682 20.8625 18.712L24.0125 19.0745C25.275 19.2245 26.225 20.287 26.225 21.562L26.225 23.7245C26.225 25.137 25.05 26.312 23.6375 26.2245C12.9625 25.562 4.43748 17.0245 3.77498 6.36204C3.68748 4.94954 4.86248 3.77454 6.27498 3.77454L8.43748 3.77454C9.69998 3.76204 10.7625 4.71204 10.9125 5.97454Z" />
-                        </svg>
-                        <p>+7 495 248 18 53</p>
-                    </a>
-                    <a class="form__icons-link" href="mailto:89165741179@mail.ru">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M25 5H5C3.625 5 2.5125 6.125 2.5125 7.5L2.5 22.5C2.5 23.875 3.625 25 5 25H25C26.375 25 27.5 23.875 27.5 22.5V7.5C27.5 6.125 26.375 5 25 5ZM25 10L15 16.25L5 10V7.5L15 13.75L25 7.5V10Z" />
-                        </svg>
-                        <p>89165741179@mail.ru</p>
-                    </a>
+            <form action="thanks_form.php" method="POST">
+                <h2 class="contact-form__title">Get Started with Your Renovation</h2>
+                <div>
+                    <input class="contact-form__input" name="name" type="text" placeholder="Your Name" required>
+                    <input class="contact-form__input" type="email" name="email" placeholder="Your Email" required>
                 </div>
+                <div>
+                    <label for="accept-input">
+                        <input value="on" name="privacy" class="contact-form__checkbox" id="accept-input" type="checkbox" required> <a class="privacy-link" href="privacy-policy.html">I accept Privacy policy</a>
+                    </label>
+                </div>
+                <button class="contact-form__button">Get Started</button>
             </form>
             <div class="form__map">
-                <iframe
-                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Ac683636e6a30776f55de9b4bd97d03f472ed720d3caecab5cf1f7cc3bf0b582e&amp;source=constructor"
-                    frameborder="0"></iframe>
-            </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d2064.487437610322!2d-47.8894601!3d-15.8014831!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3addc6db364f%3A0xc371e99f9e85f3a0!2zU3QuIE3DqWRpY28gSG9zcGl0YWxhciBTdWwgUGFya2luZyBsb3QgLSBBc2EgU3VsLCBCcmFzw61saWEgLSBERiwgNzA2NTUtNzc1LCDQkdGA0LDQt9C40LvQuNGP!5e1!3m2!1sru!2sus!4v1738692092190!5m2!1sru!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
         </div>
     </div>
 </section>

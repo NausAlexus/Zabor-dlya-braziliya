@@ -828,7 +828,7 @@ nav.fixed__nav .navbar {
   text-align: center;
 }
 
-input[type=text], textarea {
+input[type=text], textarea, input[type=email] {
   font-weight: 400;
   font-family: "Montserrat", sans-serif;
   font-size: clamp(1rem, 0.898rem + 0.51vw, 1.175rem);
@@ -1235,5 +1235,50 @@ input[type=button]:focus {
   .feedback__content-title {
     font-size: 18px;
   }
+}
+
+
+
+
+.contact-form {
+  margin: 0 0 40px 0;
+}
+.contact-form__container {
+  max-width: 800px;
+  margin: 0 auto;
+  border-radius: 40px;
+  background-color: #f3f3f3;
+  padding: 40px 10px;
+}
+.contact-form__title {
+  margin: 0 0 30px 0;
+}
+.contact-form__input {
+  padding: 8px 0 8px 15px;
+  border-radius: 10px;
+  margin: 0 0 10px 0;
+  width: 100%;
+
+}
+
+.contact-form__button {
+  margin: 20px 0 0 0;
+  width: 100%;
+  max-width: 250px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #3FBE6B;
+  color: #fff;
+  font-weight: bold;
+  font-size: 22px;
+  transition: all 0.6s ease;
+}
+.contact-form__button:hover {
+  background-color: #28b057;
+}
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
