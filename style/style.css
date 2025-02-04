@@ -1195,50 +1195,82 @@ input[type=button]:focus {
 
 
 
-.process-steps {
-	display: flex;
-	flex-direction: column;
-	gap: 20px;
-	max-width: 800px;
-	margin: 0 auto;
+  .process-steps {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+	margin-top: 100px;
+    padding: 20px; /* Внутренний отступ для мобильных устройств */
+}
+.process-steps h1 {
+	text-align: center;
+	font-weight: 900;
+	font-size: 32px;
 }
 
 .step {
-	display: flex;
-	padding: 15px;
-	background-color: #fff;
-	border-radius: 10px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column; /* По умолчанию столбец для мобильных устройств */
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .step:hover {
-	transform: translateY(-5px);
-	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
 .reverse {
-	flex-direction: row-reverse;
+    flex-direction: column-reverse; /* Убираем реверс для мобильных устройств */
 }
 
 .description {
-	flex: 1;
-	padding: 0 15px;
+    flex: 1;
+    padding: 0 15px;
 }
 
 .step img {
-	max-width: 200px; /* Измените размер изображения по вашему усмотрению */
-	height: auto;
-	border-radius: 8px;
+    max-width: 200px; /* Изменяем на 100% для адаптивности */
+    height: auto;
+    border-radius: 8px;
 }
 
 .description h3 {
-	margin-bottom: 10px;
-	color: #333; /* Темный цвет заголовков */
+    margin-bottom: 10px;
+    color: #333; /* Темный цвет заголовков */
 }
 
 .description p {
-	color: #666; /* Серый цвет текста */
+    color: #666; /* Серый цвет текста */
+}
+
+/* Медиа-запросы для экранов шире 600px */
+@media (min-width: 600px) {
+    .step {
+        flex-direction: row; /* Ставим карточки в ряд на более широких экранах */
+    }
+
+    .reverse {
+        flex-direction: row-reverse; /* Для обратного порядка на более широких экранах */
+    }
+}
+
+/* Медиа-запросы для экранов шире 400px */
+@media (min-width: 400px) {
+    .step {
+        flex-direction: row; /* Ставим карточки в ряд на экранах шире 400px */
+    }
+}
+
+@media (max-width: 600px) {
+	.step img {
+		max-width: 100%; /* Изменяем на 100% для адаптивности */
+	}
 }
 
 
