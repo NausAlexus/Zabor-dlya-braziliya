@@ -1093,11 +1093,6 @@ input[type=button]:focus {
 	font-size: 20px;
 }
 
-
-
-
-
-
 .Projects {
 	position: relative;
 	max-width: 1400px;
@@ -1191,20 +1186,18 @@ input[type=button]:focus {
 	}
   }
 
-
 .feedback__description {
 	text-align: center;
 }
 
-
-  .process-steps {
+.process-steps {
     display: flex;
     flex-direction: column;
     gap: 20px;
     max-width: 800px;
     margin: 0 auto;
 	margin-top: 100px;
-    padding: 20px; /* Внутренний отступ для мобильных устройств */
+    padding: 20px;
 }
 .process-steps h1 {
 	text-align: center;
@@ -1214,7 +1207,7 @@ input[type=button]:focus {
 
 .step {
     display: flex;
-    flex-direction: column; /* По умолчанию столбец для мобильных устройств */
+    flex-direction: column;
     padding: 15px;
     background-color: #fff;
     border-radius: 10px;
@@ -1228,7 +1221,7 @@ input[type=button]:focus {
 }
 
 .reverse {
-    flex-direction: column-reverse; /* Убираем реверс для мобильных устройств */
+    flex-direction: column-reverse;
 }
 
 .description {
@@ -1237,66 +1230,41 @@ input[type=button]:focus {
 }
 
 .step img {
-    max-width: 200px; /* Изменяем на 100% для адаптивности */
+    max-width: 200px;
     height: auto;
     border-radius: 8px;
 }
 
 .description h3 {
     margin-bottom: 10px;
-    color: #333; /* Темный цвет заголовков */
+    color: #333;
 }
 
 .description p {
-    color: #666; /* Серый цвет текста */
+    color: #666;
 }
 
-/* Медиа-запросы для экранов шире 600px */
 @media (min-width: 600px) {
     .step {
-        flex-direction: row; /* Ставим карточки в ряд на более широких экранах */
+        flex-direction: row;
     }
 
     .reverse {
-        flex-direction: row-reverse; /* Для обратного порядка на более широких экранах */
+        flex-direction: row-reverse;
     }
 }
 
-/* Медиа-запросы для экранов шире 400px */
 @media (min-width: 400px) {
     .step {
-        flex-direction: row; /* Ставим карточки в ряд на экранах шире 400px */
+        flex-direction: row;
     }
 }
 
 @media (max-width: 600px) {
 	.step img {
-		max-width: 100%; /* Изменяем на 100% для адаптивности */
+		max-width: 100%; 
 	}
 }
-
-
-
-
-@media (min-width: 1025px) {
-	.logo a:hover {
-		color: rgb(153, 153, 153);
-	}
-	.menu__item-link:hover {
-		color: rgb(153, 153, 153);
-	}
-	.footer__link:hover {
-		color: rgb(0, 0, 0);
-	}
-	.footer__privat-term:hover {
-		color: rgb(47, 96, 47);
-	}
-	.footer__link-privacy:hover {
-		color: rgb(73, 133, 73);
-	}
-}
-
-
 
 .feedback {
   margin: 0 0 90px 0;
@@ -1381,8 +1349,6 @@ input[type=button]:focus {
     margin: 0 auto; 
   }
 
-
-
   .feedback__content-title {
     font-size: 22px;
   }
@@ -1398,8 +1364,6 @@ input[type=button]:focus {
     width: 70%;
     margin: 0 auto;
   }
-
-
 
   .feedback__content-title {
     font-size: 20px;
@@ -1417,9 +1381,6 @@ input[type=button]:focus {
     font-size: 18px;
   }
 }
-
-
-
 
 .contact-form {
   margin: 0 0 40px 0;
@@ -1463,3 +1424,20 @@ input[type=button]:focus {
   align-items: center;
 }
 
+@media (min-width: 1025px) {
+	.logo a:hover {
+		color: rgb(153, 153, 153);
+	}
+	.menu__item-link:hover {
+		color: rgb(153, 153, 153);
+	}
+	.footer__link:hover {
+		color: rgb(0, 0, 0);
+	}
+	.footer__privat-term:hover {
+		color: rgb(47, 96, 47);
+	}
+	.footer__link-privacy:hover {
+		color: rgb(73, 133, 73);
+	}
+}
