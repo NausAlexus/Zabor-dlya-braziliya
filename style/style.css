@@ -1097,6 +1097,109 @@ input[type=button]:focus {
 
 
 
+
+.Projects {
+	position: relative;
+	max-width: 1400px;
+	margin: auto;
+	overflow: hidden;
+  }
+  
+  .projects-title {
+	text-align: center;
+	font-size: 2.2rem;
+	font-weight: bold;
+	margin: 40px 0;
+	color: #333;
+  }
+  
+  .slider {
+	display: flex;
+	transition: transform 0.5s ease;
+	gap: 30px;
+  }
+  
+  .slide {
+	flex: 0 0 calc(33.33% - 20px);
+	position: relative;
+  }
+  
+  .slide img {
+	width: 100%;
+	height: 100%;
+	aspect-ratio: 1;
+	border-radius: 30px;
+  }
+  
+  .prev, .next {
+	position: absolute;
+	top: 50%;
+	background-color: rgba(255, 255, 255, 0.8);
+	border: none;
+	cursor: pointer;
+	padding: 10px 15px;
+	border-radius: 5px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+	z-index: 10;
+	transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .prev {
+	left: 10px;
+  }
+  
+  .next {
+	right: 10px;
+  }
+  
+  .prev:hover, .next:hover {
+	background-color: rgba(255, 255, 255, 1);
+	transform: scale(1.05);
+  }
+  
+  .prev:focus, .next:focus {
+	outline: none;
+	box-shadow: 0 0 0 3px rgba(13, 171, 66, 0.5);
+  }
+  
+  @media (max-width: 1400px) {
+	.projects-title {
+	  font-size: 28px;
+	  margin: 12px 0 20px 60px;
+	}
+	.slide {
+	  flex: 0 0 calc(50% - 20px);
+	}
+  }
+  
+  @media (max-width: 1024px) {
+	.projects-title {
+	  font-size: 22px;
+	  margin: 12px 0 20px 30px;
+	}
+	.slide {
+	  flex: 0 0 calc(50% - 20px);
+	}
+  }
+  
+  @media (max-width: 768px) {
+	.projects-title {
+	  margin: 12px 0 20px 10px;
+	}
+	.slide {
+	  flex: 0 0 100%;
+	}
+  }
+
+
+
+
+
+
+
+
+
+
 @media (min-width: 1025px) {
 	.logo a:hover {
 		color: rgb(153, 153, 153);
