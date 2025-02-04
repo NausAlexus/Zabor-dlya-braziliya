@@ -1058,6 +1058,40 @@ input[type=button]:focus {
 	font-size: 12px;
 }
 
+.container-privacy {
+	max-width: 800px;
+	margin: auto;
+	margin-top: 140px;
+	margin-bottom: 40px;
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.section-title {
+	text-align: center;
+	color: #333;
+	margin-bottom: 20px;
+	font-size: 2em;
+}
+.compliance__wrapper {
+	margin-top: 20px;
+}
+.compliance__text {
+	margin-bottom: 15px;
+	line-height: 1.6;
+	color: #555;
+}
+.compliance__text strong {
+	color: #333;
+}
+
+.footer__link-privacy {
+	color: rgb(68, 171, 68);
+	transition: color 0.3s ease;
+	font-size: 20px;
+}
+
 
 
 
@@ -1074,5 +1108,8 @@ input[type=button]:focus {
 	}
 	.footer__privat-term:hover {
 		color: rgb(47, 96, 47);
+	}
+	.footer__link-privacy:hover {
+		color: rgb(73, 133, 73);
 	}
 }
